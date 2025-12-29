@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Maccheroni Code</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		body {
+			margin: 10px;
+			font-family: sans-serif;
+			font-size: 16px;
+			text-align: center;
+		}
+		.intro {
+			font-size: 1.125em;
+			white-space: pre-wrap;
+		}
+		#logo {
+			width: 280px;
+		}
+		.social-links {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.social-link {
+			text-decoration: none;
+		}
+		.social-link > img {
+			padding: 10px;
+			height: 40px;
+		}
+		.social-link.yt > img {
+			padding: 0;
+			height: 70px;
+		}
+		#footer {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div><img id="logo" src="logo.png" alt="Maccheroni Code" title="Maccheroni Code" /></div>
+	<div><pre class="intro">Just two friends babbling about tech</pre></div>
+	<div><strong><pre class="intro">We are cooking new tasty episodes every 2 weeks!</pre></strong></div>
+	<div class="social-links">
+		<a class="social-link yt" href="https://www.youtube.com/@MaccheroniCode">
+			<img src="yt_logo_fullcolor_almostblack_digital.png" alt="YouTube" title="YouTube">
+		</a>
+		<a class="social-link" href="https://youtube.com/playlist?list=PLMmkMaXrnsDMf8aghT3onA84ElvnyS2YW&si=cYKJvYQ8sZrCyRp2">
+			<img src="WatchonYouTube-white.svg" alt="Watch on YouTube" title="YouTube">
+		</a>
+		<a class="social-link" href="https://music.youtube.com/playlist?list=PLMmkMaXrnsDMf8aghT3onA84ElvnyS2YW&si=KCbNZJXtJyTra1Jv">
+			<img src="ListenonYouTubeMusic-white.svg" alt="Listen on YouTube Music" title="YouTube">
+		</a>
+	</div>
+	<div class="social-links">
+		<a class="social-link" href="https://open.spotify.com/show/2kkWrwjHTEousBZ3MT1izR">
+			<img src="Spotify_Full_Logo_Green.svg" alt="Spotify" title="Spotify">
+		</a>
+	</div>
+	<br />
+	<!-- <div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=BCyWrA-Epf4p_tjA&amp;list=PLMmkMaXrnsDMf8aghT3onA84ElvnyS2YW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div> -->
+	<div id="footer">
+		&copy;<span id="copy-year">2026</span> Maccheroni Code
+	</div>
+	<script>
+		document.getElementById('copy-year').textContent = new Date().getFullYear();
+	</script>
+	<script>
+		var commonStyle = 'font-weight:bold; background: #f09647; color: #fff; text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;'
+		console.info('%c MACCHERONI \r\n%cCODE', 'font-size:20px; ' + commonStyle, 'font-size:51px; padding: 0 10px; ' + commonStyle);
+	</script>
+</body>
+</html>
